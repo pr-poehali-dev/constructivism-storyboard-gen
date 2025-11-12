@@ -6,23 +6,23 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 222 47% 11%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 0%;
+    --card: 224 37% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 0%;
+    --popover: 224 37% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 0%;
+    --primary: 0 79% 53%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 79% 53%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 220 20% 25%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 95%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 220 20% 20%;
+    --muted-foreground: 0 0% 65%;
 
     --accent: 0 79% 53%;
     --accent-foreground: 0 0% 100%;
@@ -30,11 +30,11 @@
     --destructive: 0 79% 53%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 0%;
-    --input: 0 0% 90%;
+    --border: 220 20% 30%;
+    --input: 220 20% 20%;
     --ring: 0 79% 53%;
 
-    --radius: 0rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -110,7 +110,6 @@
   h6 {
     font-family: "Oswald", sans-serif;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
   }
 }
