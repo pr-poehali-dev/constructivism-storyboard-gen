@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=VT323&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -109,5 +109,53 @@
   h5,
   h6 {
     font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.92;
+    }
+  }
+
+  @keyframes scanline {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes crt-glow {
+    0%,
+    100% {
+      box-shadow:
+        0 0 40px rgba(0, 255, 100, 0.3),
+        inset 0 0 80px rgba(0, 255, 100, 0.05);
+    }
+    50% {
+      box-shadow:
+        0 0 50px rgba(0, 255, 100, 0.4),
+        inset 0 0 90px rgba(0, 255, 100, 0.08);
+    }
+  }
+
+  .crt-screen {
+    animation: crt-glow 2s ease-in-out infinite;
+  }
+
+  .crt-flicker {
+    animation: flicker 0.15s infinite;
+  }
+
+  .terminal-text {
+    font-family: "VT323", monospace;
+    text-shadow: 0 0 5px currentColor;
   }
 }
